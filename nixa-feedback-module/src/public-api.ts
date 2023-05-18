@@ -1,5 +1,5 @@
 /*
- * Public API Surface of ionic-nixa-feedback-module
+ * Public API Surface of nixa-feedback-module
  */
 
 export * from "./lib/feedback.module";

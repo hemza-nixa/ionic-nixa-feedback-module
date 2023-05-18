@@ -1,4 +1,4 @@
-# ionic-nixa-feedback-module workspace
+# nixa-feedback-module workspace
 
 The module is thought as an easy to integrate solution for sending feedback. Typically, the user shakes her device, a popup opens, the user can enter what went wrong, and finally the report is sent, including some additional information like screenshot, logs, app and device info.
 

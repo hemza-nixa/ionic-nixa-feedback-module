@@ -19,7 +19,7 @@ module.exports = function (config) {
 			clearContext: false // leave Jasmine Spec Runner output visible in browser
 		},
 		coverageIstanbulReporter: {
-			dir: require('path').join(__dirname, '../coverage/ionic-nixa-feedback-module'),
+			dir: require('path').join(__dirname, '../coverage/nixa-feedback-module'),
 			reports: ['html', 'lcovonly'],
 			fixWebpackSourcePaths: true
 		},

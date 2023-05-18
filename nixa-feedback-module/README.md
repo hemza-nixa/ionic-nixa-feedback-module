@@ -1,13 +1,10 @@
-# ionic-nixa-feedback-module
+# nixa-feedback-module
 
 **The dependencies used by the latest version are the same as needed for [Ionic 7.0.5](https://github.com/ionic-team/ionic/blob/master/CHANGELOG.md). For older versions use:**
 
-| ionic-nixa-feedback-module | Ionic | Angular
-| ----- | -------- | ------
-| 5.1.0 | >= 7.0.5 | ^16.0.0
-| 5.0.0 | >= 4.0.0 | ^7.0.0
-| 4.0.0 | >= 3.9.0 | ^5.0.0
-| 3.0.0 | >= 3.0.0 | ^4.0.0
+| nixa-feedback-module | Ionic    | Angular |
+|----------------------|----------|---------|
+| 1.0.0                | >= 7.0.5 | ^16.0.0 |
 
 The module is thought as an easy to integrate solution for sending feedback. Typically,
 the user shakes her device, a popup opens, the user can enter what went wrong,
@@ -16,16 +13,12 @@ and finally the report is sent, including some additional information like scree
 The report is sent to a web service, which can do anything with the data, e.g. forward by mail to the
 developer, store it in a database, ...
 
-A sample app using this module is [ionic-feedback-sample](https://github.com/Ritzlgrmft/ionic-feedback-sample).
-
-A sample backend web service is [ionic-feedback-backend](https://github.com/Ritzlgrmft/ionic-feedback-backend).
-
 ## Usage
 
 ### npm package
 
 ```bash
-npm install ionic-nixa-feedback-module --save
+npm install nixa-feedback-module --save
 ```
 
 ### Cordova plugins
@@ -42,7 +35,7 @@ Additionally, you will need some Cordova plugins:
 In your `app.module.ts`, you have to import the module:
 
 ```typescript
-import { FeedbackModule } from "ionic-nixa-feedback-module";
+import { FeedbackModule } from "nixa-feedback-module";
 
 @NgModule({
   ...
@@ -60,7 +53,7 @@ In your `app.component.ts`, you have to inject 2 components into your constructo
 - `FeedbackViewerModalService`: shows a modal in case of a shake event
 
 ```typescript
-import { FeedbackService, FeedbackViewerModalService } from "ionic-nixa-feedback-module";
+import { FeedbackService, FeedbackViewerModalService } from "nixa-feedback-module";
 
 constructor(
   platform: Platform,

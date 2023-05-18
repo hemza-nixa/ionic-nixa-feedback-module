@@ -19,11 +19,11 @@
       "dom"
     ],
     "paths": {
-      "ionic-feedback-module": [
-        "dist/ionic-nixa-feedback-module"
+      "nixa-feedback-module": [
+        "dist/nixa-feedback-module"
       ],
-      "ionic-feedback-module/*": [
-        "dist/ionic-nixa-feedback-module/*"
+      "nixa-feedback-module/*": [
+        "dist/nixa-feedback-module/*"
       ]
     }
   }

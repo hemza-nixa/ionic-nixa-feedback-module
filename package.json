@@ -1,7 +1,7 @@
 {
-	"name": "ionic-nixa-feedback-module",
-	"version": "1.0.2",
-	"description": "Test app for ionic-nixa-feedback-module",
+	"name": "nixa-feedback-module",
+	"version": "1.0.0",
+	"description": "Test app for nixa-feedback-module",
 	"author": {
 		"name": "Nixa",
 		"email": "hemza@nixa.ca"
@@ -11,18 +11,19 @@
 	"private": false,
 	"keywords": [
 		"ionic",
-		"feedback"
+		"feedback",
+		"bug reporting"
 	],
 	"scripts": {
 		"build": "npm run build-module && npm run build-web && npm run build-app-ios",
-		"build-module": "ng build ionic-nixa-feedback-module && cpx 'ionic-nixa-feedback-module/README.md' dist/ionic-nixa-feedback-module --verbose",
+		"build-module": "ng build nixa-feedback-module && cpx 'nixa-feedback-module/README.md' dist/nixa-feedback-module --verbose",
 		"test": "npm run test-coverage && npm run test-compodoc && npm run lint && npm run test-e2e",
-		"test-coverage": "ng test ionic-nixa-feedback-module --code-coverage --watch false --browsers ChromeHeadless",
-		"test-compodoc": "cd ionic-nixa-feedback-module && compodoc --coverageTest 100 && cd ../..",
-		"test-watch": "ng test ionic-nixa-feedback-module --code-coverage",
+		"test-coverage": "ng test nixa-feedback-module --code-coverage --watch false --browsers ChromeHeadless",
+		"test-compodoc": "cd nixa-feedback-module && compodoc --coverageTest 100 && cd ../..",
+		"test-watch": "ng test nixa-feedback-module --code-coverage",
 		"lint": "ng lint",
 		"codecov": "codecov",
-		"compodoc": "cd ionic-nixa-feedback-module && compodoc && cd ../..",
+		"compodoc": "cd nixa-feedback-module && compodoc",
 		"semantic-release": "semantic-release",
 		"semantic-release-version": "semantic-release -p semantic-release-ado"
 	},
@@ -68,7 +69,7 @@
 		}
 	},
 	"release": {
-		"pkgRoot": "dist/ionic-nixa-feedback-module"
+		"pkgRoot": "dist/nixa-feedback-module"
 	},
 	"cordova": {
 		"plugins": {

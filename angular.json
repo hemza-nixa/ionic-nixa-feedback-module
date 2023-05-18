@@ -3,33 +3,33 @@
 	"version": 1,
 	"newProjectRoot": "projects",
 	"projects": {
-		"ionic-nixa-feedback-module": {
-			"root": "ionic-nixa-feedback-module",
-			"sourceRoot": "ionic-nixa-feedback-module/src",
+		"nixa-feedback-module": {
+			"root": "nixa-feedback-module",
+			"sourceRoot": "nixa-feedback-module/src",
 			"projectType": "library",
 			"prefix": "lib",
 			"architect": {
 				"build": {
 					"builder": "@angular-devkit/build-ng-packagr:build",
 					"options": {
-						"tsConfig": "ionic-nixa-feedback-module/tsconfig.lib.json",
-						"project": "ionic-nixa-feedback-module/ng-package.json"
+						"tsConfig": "nixa-feedback-module/tsconfig.lib.json",
+						"project": "nixa-feedback-module/ng-package.json"
 					}
 				},
 				"test": {
 					"builder": "@angular-devkit/build-angular:karma",
 					"options": {
-						"main": "ionic-nixa-feedback-module/src/test.ts",
-						"tsConfig": "ionic-nixa-feedback-module/tsconfig.spec.json",
-						"karmaConfig": "ionic-nixa-feedback-module/karma.conf.js"
+						"main": "nixa-feedback-module/src/test.ts",
+						"tsConfig": "nixa-feedback-module/tsconfig.spec.json",
+						"karmaConfig": "nixa-feedback-module/karma.conf.js"
 					}
 				},
 				"lint": {
 					"builder": "@angular-devkit/build-angular:tslint",
 					"options": {
 						"tsConfig": [
-							"ionic-nixa-feedback-module/tsconfig.lib.json",
-							"ionic-nixa-feedback-module/tsconfig.spec.json"
+							"nixa-feedback-module/tsconfig.lib.json",
+							"nixa-feedback-module/tsconfig.spec.json"
 						],
 						"exclude": [
 							"**/node_modules/**"

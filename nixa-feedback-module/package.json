@@ -1,5 +1,5 @@
 {
-	"name": "ionic-nixa-feedback-module",
+	"name": "nixa-feedback-module",
 	"version": "1.0.0",
 	"description": "Collect feedback and bug report when user shake his device",
 	"author": {

@@ -1,6 +1,6 @@
 {
 	"$schema": "../node_modules/@compodoc/compodoc/src/config/schema.json",
-	"name": "ionic-nixa-feedback-module",
+	"name": "nixa-feedback-module",
 	"tsconfig": "tsconfig.lib.json",
 	"output": "../docs",
 	"disablePrivate": true,
