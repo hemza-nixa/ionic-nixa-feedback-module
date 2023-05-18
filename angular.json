@@ -1,0 +1,45 @@
+{
+	"$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+	"version": 1,
+	"newProjectRoot": "projects",
+	"projects": {
+		"ionic-nixa-feedback-module": {
+			"root": "ionic-nixa-feedback-module",
+			"sourceRoot": "ionic-nixa-feedback-module/src",
+			"projectType": "library",
+			"prefix": "lib",
+			"architect": {
+				"build": {
+					"builder": "@angular-devkit/build-ng-packagr:build",
+					"options": {
+						"tsConfig": "ionic-nixa-feedback-module/tsconfig.lib.json",
+						"project": "ionic-nixa-feedback-module/ng-package.json"
+					}
+				},
+				"test": {
+					"builder": "@angular-devkit/build-angular:karma",
+					"options": {
+						"main": "ionic-nixa-feedback-module/src/test.ts",
+						"tsConfig": "ionic-nixa-feedback-module/tsconfig.spec.json",
+						"karmaConfig": "ionic-nixa-feedback-module/karma.conf.js"
+					}
+				},
+				"lint": {
+					"builder": "@angular-devkit/build-angular:tslint",
+					"options": {
+						"tsConfig": [
+							"ionic-nixa-feedback-module/tsconfig.lib.json",
+							"ionic-nixa-feedback-module/tsconfig.spec.json"
+						],
+						"exclude": [
+							"**/node_modules/**"
+						]
+					}
+				}
+			}
+		}
+	},
+  "cli": {
+    "analytics": false
+  }
+}

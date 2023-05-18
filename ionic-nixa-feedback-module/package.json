@@ -1,0 +1,28 @@
+{
+	"name": "ionic-nixa-feedback-module",
+	"version": "1.0.0",
+	"description": "Collect feedback and bug report when user shake his device",
+	"author": {
+		"name": "Nixa",
+		"email": "hemza@nixa.ca"
+	},
+	"repository": "https://github.com/hemza-nixa/ionic-nixa-feedback-module.git",
+	"license": "MIT",
+	"private": false,
+	"keywords": [
+		"ionic",
+		"feedback"
+	],
+	"peerDependencies": {
+		"@angular/common": "~16.0.0",
+		"@angular/core": "~16.0.0",
+		"@ionic/angular": "^7.0.5",
+		"@ionic-native/app-version": "^5.36.0",
+		"@ionic-native/core": "^5.36.0",
+		"@ionic-native/device": "^5.36.0",
+		"@ionic-native/screenshot": "^5.36.0",
+		"ionic-logging-service": "^16.0.0",
+		"ionicons": "^4.0.0",
+		"moment": "^2.29.4"
+	}
+}

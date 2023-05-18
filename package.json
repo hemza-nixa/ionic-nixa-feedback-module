@@ -1,0 +1,87 @@
+{
+	"name": "ionic-nixa-feedback-module",
+	"version": "0.0.0-development",
+	"description": "Test app for ionic-nixa-feedback-module",
+	"author": {
+		"name": "Nixa",
+		"email": "hemza@nixa.ca"
+	},
+	"repository": "https://github.com/hemza-nixa/ionic-nixa-feedback-module.git",
+	"license": "MIT",
+	"private": false,
+	"keywords": [
+		"ionic",
+		"feedback"
+	],
+	"scripts": {
+		"build": "npm run build-module && npm run build-web && npm run build-app-ios",
+		"build-module": "ng build ionic-nixa-feedback-module && cpx 'ionic-nixa-feedback-module/README.md' dist/ionic-nixa-feedback-module --verbose",
+		"test": "npm run test-coverage && npm run test-compodoc && npm run lint && npm run test-e2e",
+		"test-coverage": "ng test ionic-nixa-feedback-module --code-coverage --watch false --browsers ChromeHeadless",
+		"test-compodoc": "cd ionic-nixa-feedback-module && compodoc --coverageTest 100 && cd ../..",
+		"test-watch": "ng test ionic-nixa-feedback-module --code-coverage",
+		"lint": "ng lint",
+		"codecov": "codecov",
+		"compodoc": "cd ionic-nixa-feedback-module && compodoc && cd ../..",
+		"semantic-release": "semantic-release",
+		"semantic-release-version": "semantic-release -p semantic-release-ado"
+	},
+	"devDependencies": {
+		"@angular-devkit/build-angular": "~16.0.1",
+		"@angular-devkit/build-ng-packagr": "~0.1002.0",
+		"@angular/cli": "~16.0.1",
+		"@angular/compiler-cli": "~16.0.1",
+		"@angular/language-service": "~16.0.1",
+		"@compodoc/compodoc": "1.1.19",
+		"@ionic/angular-toolkit": "9.0.0",
+		"@types/jasmine": "~4.3.1",
+		"@types/jasminewd2": "~2.0.10",
+		"@types/node": "20.1.3",
+		"codecov": "3.8.2",
+		"codelyzer": "6.0.2",
+		"cpx": "1.5.0",
+		"jasmine-core": "~4.6.0",
+		"jasmine-reporters": "2.5.2",
+		"jasmine-spec-reporter": "~7.0.0",
+		"karma": "~6.4.2",
+		"karma-chrome-launcher": "~3.2.0",
+		"karma-coverage-istanbul-reporter": "~3.0.3",
+		"karma-jasmine": "~5.1.0",
+		"karma-jasmine-html-reporter": "^2.0.0",
+		"karma-junit-reporter": "2.0.1",
+		"ng-packagr": "^16.0.1",
+		"protractor": "5.4.2",
+		"puppeteer": "20.2.0",
+		"semantic-release": "^21.0.2",
+		"semantic-release-ado": "git+https://github.com/Ritzlgrmft/semantic-release-ado.git",
+		"ts-node": "~10.9.1",
+		"tsickle": ">=0.46.3",
+		"tslib": "^2.5.0",
+		"tslint": "5.20.1",
+		"tslint-angular": "3.0.3",
+		"typescript": "~5.0.4",
+		"xpath": "0.0.32"
+	},
+	"config": {
+		"commitizen": {
+			"path": "cz-conventional-changelog"
+		}
+	},
+	"release": {
+		"pkgRoot": "dist/ionic-nixa-feedback-module"
+	},
+	"cordova": {
+		"plugins": {
+			"com.darktalker.cordova.screenshot": {},
+			"cordova-plugin-app-version": {},
+			"cordova-plugin-device": {},
+			"cordova-plugin-splashscreen": {},
+			"cordova-plugin-statusbar": {},
+			"cordova-plugin-shake": {},
+			"cordova-plugin-ionic-webview": {}
+		},
+		"platforms": [
+			"ios"
+		]
+	}
+}
